@@ -20,6 +20,11 @@ module.exports = sequelize.define('folder', {
     field: 'description',
     type: Sequelize.STRING,
   },
+  user_id: {
+    field: 'user_id',
+    type: Sequelize.INTEGER,
+    allowNull: false
+  },
   createdAt: {
     field: 'createdAt',
     type: Sequelize.DATE,

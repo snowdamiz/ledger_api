@@ -15,6 +15,13 @@ module.exports = {
       content: {
         type: Sequelize.STRING
       },
+      user_id: {
+        allowNull: false,
+        type: Sequelize.INTEGER
+      },
+      folder_id: {
+        type: Sequelize.INTEGER
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

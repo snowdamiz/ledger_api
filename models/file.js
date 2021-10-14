@@ -20,6 +20,15 @@ module.exports = sequelize.define('file', {
     field: 'content',
     type: Sequelize.STRING,
   },
+  user_id: {
+    field: 'user_id',
+    type: Sequelize.INTEGER,
+    allowNull: false
+  },
+  folder_id: {
+    field: 'folder_id',
+    type: Sequelize.INTEGER
+  },
   createdAt: {
     field: 'createdAt',
     type: Sequelize.DATE,
