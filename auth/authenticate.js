@@ -13,11 +13,7 @@ function protect (req, res, next) {
 }
 
 function generateToken(user) {
-    const payload = {
-        id: user.id,
-        email: user.email,
-    }
-
+    const payload = { id: user.id, email: user.email }
     const options = { expiresIn: '1w' }
     return jwt.sign(payload, jwtSecret, options)
 }
