@@ -4,7 +4,9 @@
   "description": "ledger backend api",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cross-env NODE_ENV=test jest --watchAll --verbose --maxWorkers=1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,7 @@
     "sequelize": "^6.7.0"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
     "jest": "^27.2.5",
     "morgan": "^1.10.0",
